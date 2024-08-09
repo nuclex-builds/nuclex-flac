@@ -52,42 +52,16 @@ endif()
 
 # -------------------------------------------------------------------------------------------------
 
-#configure_file(
-#	"${PROJECT_SOURCE_DIR}/config.h"
-#	"${PROJECT_SOURCE_DIR}/build/config.h"
-#	COPYONLY
-#)
+configure_file(
+  "${PROJECT_SOURCE_DIR}/config.h"
+  "${PROJECT_SOURCE_DIR}/build/config.h"
+  COPYONLY
+)
 
 # -------------------------------------------------------------------------------------------------
 
 set(
   sourceFiles
-  "build/src/test_seeking/main.c"
-  "build/src/test_grabbag/picture/main.c"
-  "build/src/test_grabbag/cuesheet/main.c"
-  "build/src/flac/analyze.c"
-  "build/src/flac/foreign_metadata.c"
-  "build/src/flac/decode.c"
-  "build/src/flac/vorbiscomment.c"
-  "build/src/flac/main.c"
-  "build/src/flac/local_string_utils.c"
-  "build/src/flac/iffscan.c"
-  "build/src/flac/encode.c"
-  "build/src/flac/utils.c"
-  "build/src/test_libFLAC/crc.c"
-  "build/src/test_libFLAC/format.c"
-  "build/src/test_libFLAC/endswap.c"
-  "build/src/test_libFLAC/bitreader.c"
-  "build/src/test_libFLAC/main.c"
-  "build/src/test_libFLAC/encoders.c"
-  "build/src/test_libFLAC/md5.c"
-  "build/src/test_libFLAC/metadata_object.c"
-  "build/src/test_libFLAC/bitwriter.c"
-  "build/src/test_libFLAC/metadata_manip.c"
-  "build/src/test_libFLAC/metadata.c"
-  "build/src/test_libFLAC/decoders.c"
-  "build/src/utils/flacdiff/main.cpp"
-  "build/src/utils/flactimer/main.cpp"
   "build/src/share/replaygain_analysis/replaygain_analysis.c"
   "build/src/share/grabbag/alloc.c"
   "build/src/share/grabbag/snprintf.c"
@@ -98,47 +72,35 @@ set(
   "build/src/share/grabbag/file.c"
   "build/src/share/utf8/iconvert.c"
   "build/src/share/utf8/charset.c"
-  "build/src/share/utf8/makemap.c"
+  #"build/src/share/utf8/makemap.c"
   "build/src/share/utf8/utf8.c"
   "build/src/share/utf8/charset_test.c"
-  "build/src/share/replaygain_synthesis/replaygain_synthesis.c"
-  "build/src/share/getopt/getopt1.c"
-  "build/src/share/getopt/getopt.c"
-  "build/src/share/win_utf8_io/win_utf8_io.c"
-  "build/src/metaflac/operations_shorthand_picture.c"
-  "build/src/metaflac/options.c"
-  "build/src/metaflac/operations.c"
-  "build/src/metaflac/operations_shorthand_streaminfo.c"
-  "build/src/metaflac/usage.c"
-  "build/src/metaflac/main.c"
-  "build/src/metaflac/operations_shorthand_vorbiscomment.c"
-  "build/src/metaflac/operations_shorthand_cuesheet.c"
-  "build/src/metaflac/operations_shorthand_seektable.c"
-  "build/src/metaflac/utils.c"
-  "build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin.c"
-  "build/src/libFLAC/deduplication/bitreader_read_rice_signed_block.c"
-  "build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_neon.c"
-  "build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_sse2.c"
+  #"build/src/share/replaygain_synthesis/replaygain_synthesis.c"
+  #"build/src/share/win_utf8_io/win_utf8_io.c"
+  #"build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin.c"
+  #"build/src/libFLAC/deduplication/bitreader_read_rice_signed_block.c"
+  #"build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_neon.c"
+  #"build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin_sse2.c"
   "build/src/libFLAC/stream_decoder.c"
   "build/src/libFLAC/crc.c"
   "build/src/libFLAC/float.c"
   "build/src/libFLAC/ogg_helper.c"
   "build/src/libFLAC/fixed.c"
   "build/src/libFLAC/format.c"
-  "build/src/libFLAC/stream_encoder_intrin_sse2.c"
-  "build/src/libFLAC/lpc_intrin_avx2.c"
+  #"build/src/libFLAC/stream_encoder_intrin_sse2.c"
+  #"build/src/libFLAC/lpc_intrin_avx2.c"
   "build/src/libFLAC/bitreader.c"
   "build/src/libFLAC/stream_encoder_framing.c"
-  "build/src/libFLAC/lpc_intrin_sse41.c"
+  #"build/src/libFLAC/lpc_intrin_sse41.c"
   "build/src/libFLAC/memory.c"
-  "build/src/libFLAC/fixed_intrin_sse42.c"
+  #"build/src/libFLAC/fixed_intrin_sse42.c"
   "build/src/libFLAC/metadata_iterators.c"
-  "build/src/libFLAC/lpc_intrin_fma.c"
-  "build/src/libFLAC/fixed_intrin_sse2.c"
+  #"build/src/libFLAC/lpc_intrin_fma.c"
+  #"build/src/libFLAC/fixed_intrin_sse2.c"
   "build/src/libFLAC/window.c"
   "build/src/libFLAC/stream_encoder.c"
-  "build/src/libFLAC/stream_encoder_intrin_avx2.c"
-  "build/src/libFLAC/lpc_intrin_sse2.c"
+  #"build/src/libFLAC/stream_encoder_intrin_avx2.c"
+  #"build/src/libFLAC/lpc_intrin_sse2.c"
   "build/src/libFLAC/md5.c"
   "build/src/libFLAC/ogg_decoder_aspect.c"
   "build/src/libFLAC/lpc.c"
@@ -147,29 +109,17 @@ set(
   "build/src/libFLAC/bitwriter.c"
   "build/src/libFLAC/ogg_mapping.c"
   "build/src/libFLAC/bitmath.c"
-  "build/src/libFLAC/lpc_intrin_neon.c"
-  "build/src/libFLAC/fixed_intrin_avx2.c"
-  "build/src/libFLAC/stream_encoder_intrin_ssse3.c"
+  #"build/src/libFLAC/lpc_intrin_neon.c"
+  #"build/src/libFLAC/fixed_intrin_avx2.c"
+  #"build/src/libFLAC/stream_encoder_intrin_ssse3.c"
   "build/src/libFLAC/ogg_encoder_aspect.c"
   "build/src/libFLAC/cpu.c"
 )
 set(
   headerFiles
-  "build/src/flac/decode.h"
-  "build/src/flac/local_string_utils.h"
-  "build/src/flac/vorbiscomment.h"
-  "build/src/flac/analyze.h"
-  "build/src/flac/foreign_metadata.h"
-  "build/src/flac/utils.h"
-  "build/src/flac/encode.h"
   "build/src/share/utf8/charset.h"
   "build/src/share/utf8/iconvert.h"
   "build/src/share/utf8/charmaps.h"
-  "build/src/metaflac/options.h"
-  "build/src/metaflac/utils.h"
-  "build/src/metaflac/operations_shorthand.h"
-  "build/src/metaflac/usage.h"
-  "build/src/metaflac/operations.h"
   "build/src/libFLAC/include/protected/all.h"
   "build/src/libFLAC/include/protected/stream_decoder.h"
   "build/src/libFLAC/include/protected/stream_encoder.h"
@@ -220,8 +170,6 @@ set(
   "build/include/share/utf8.h"
   "build/include/share/private.h"
   "build/include/share/replaygain_analysis.h"
-  "build/include/test_libs_common/metadata_utils.h"
-  "build/include/test_libs_common/file_utils_flac.h"
 )
 
 # -------------------------------------------------------------------------------------------------
@@ -231,12 +179,15 @@ add_library(Flac::Static ALIAS Flac)
 
 target_compile_definitions(
   Flac
+  PRIVATE HAVE_CONFIG_H
   PRIVATE FLAC_BUILD
 )
 
 target_include_directories(
   Flac
   PUBLIC "build/include"
+  PUBLIC "build/src/libFLAC/include"
+  PRIVATE "build"
 )
 
 target_sources(
