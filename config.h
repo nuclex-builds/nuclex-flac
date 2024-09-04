@@ -53,37 +53,73 @@
 #define GIT_COMMIT_TAG "1.4.3"
 
 /* Compiler has the __builtin_bswap16 intrinsic */
-#define HAVE_BSWAP16
+#if defined(_MSC_VER)
+	/* #undef HAVE_BSWAP16 */
+#else
+	#define HAVE_BSWAP16
+#endif
 
 /* Compiler has the __builtin_bswap32 intrinsic */
-#define HAVE_BSWAP32
+#if defined(_MSC_VER)
+	/* #undef HAVE_BSWAP32 */
+#else
+	#define HAVE_BSWAP32
+#endif
 
 /* Define to 1 if you have the <byteswap.h> header file. */
-#define HAVE_BYTESWAP_H
+#if defined(_MSC_VER)
+	/* #undef HAVE_BYTESWAP_H */
+#else
+	#define HAVE_BYTESWAP_H
+#endif
 
 /* define if you have clock_gettime */
-#define HAVE_CLOCK_GETTIME
+#if defined(_MSC_VER)
+	/* #undef HAVE_CLOCK_GETTIME */
+#else
+	#define HAVE_CLOCK_GETTIME
+#endif
 
 /* Define to 1 if you have the <cpuid.h> header file. */
-#define HAVE_CPUID_H
+#if defined(_MSC_VER)
+	/* #undef HAVE_CPUID_H */
+#else
+	#define HAVE_CPUID_H
+#endif
 
 /* Define to 1 if fseeko (and presumably ftello) exists and is declared. */
-#define HAVE_FSEEKO
+#if defined(_MSC_VER)
+	/* #undef HAVE_FSEEKO */
+#else
+	#define HAVE_FSEEKO
+#endif
 
 /* Define to 1 if you have the `getopt_long' function. */
 /* #undef HAVE_GETOPT_LONG */
 
 /* Define if you have the iconv() function and it works. */
-#define HAVE_ICONV
+#if defined(_MSC_VER)
+	/* #undef HAVE_ICONV */
+#else
+	#define HAVE_ICONV
+#endif
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H
 
 /* Define if you have <langinfo.h> and nl_langinfo(CODESET). */
-#define HAVE_LANGINFO_CODESET
+#if defined(_MSC_VER)
+	/* #undef HAVE_LANGINFO_CODESET */
+#else
+	#define HAVE_LANGINFO_CODESET
+#endif
 
 /* lround support */
-#define HAVE_LROUND 1
+#if defined(_MSC_VER)
+	#define HAVE_LROUND 0
+#else
+	#define HAVE_LROUND 1
+#endif
 
 /* Define to 1 if you have the <memory.h> header file. */
 /* #undef HAVE_MEMORY_H */
@@ -98,10 +134,18 @@
 #define HAVE_STRING_H
 
 /* Define to 1 if you have the <sys/ioctl.h> header file. */
-#define HAVE_SYS_IOCTL_H
+#if defined(_MSC_VER)
+	/* #undef HAVE_SYS_IOCTL_H */
+#else
+	#define HAVE_SYS_IOCTL_H
+#endif
 
 /* Define to 1 if you have the <sys/param.h> header file. */
-#define HAVE_SYS_PARAM_H
+#if defined(_MSC_VER)
+	/* #undef HAVE_SYS_PARAM_H */
+#else
+	#define HAVE_SYS_PARAM_H
+#endif
 
 /* Define to 1 if you have the <sys/stat.h> header file. */
 /* #undef HAVE_SYS_STAT_H */
@@ -110,7 +154,11 @@
 /* #undef HAVE_SYS_TYPES_H */
 
 /* Define to 1 if you have the <termios.h> header file. */
-#define HAVE_TERMIOS_H
+#if defined(_MSC_VER)
+	/* #undef HAVE_TERMIOS_H */
+#else
+	#define HAVE_TERMIOS_H
+#endif
 
 /* Define to 1 if typeof works with your compiler. */
 /* #undef HAVE_TYPEOF */
