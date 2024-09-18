@@ -212,6 +212,9 @@
     <ClInclude Include="build\include\share\utf8.h" />
     <ClInclude Include="build\include\share\private.h" />
     <ClInclude Include="build\include\share\replaygain_analysis.h" />
+    <ClInclude Include="build\src\share\utf8\charmaps.h" />
+    <ClInclude Include="build\src\share\utf8\charset.h" />
+    <ClInclude Include="build\src\share\utf8\iconvert.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="build\src\share\replaygain_analysis\replaygain_analysis.c" />
@@ -225,7 +228,6 @@
     <ClCompile Include="build\src\share\utf8\iconvert.c" />
     <ClCompile Include="build\src\share\utf8\charset.c" />
     <ClCompile Include="build\src\share\utf8\utf8.c" />
-    <ClCompile Include="build\src\share\utf8\charset_test.c" />
     <ClCompile Include="build\src\libFLAC\stream_decoder.c" />
     <ClCompile Include="build\src\libFLAC\crc.c" />
     <ClCompile Include="build\src\libFLAC\float.c" />
@@ -248,6 +250,7 @@
     <ClCompile Include="build\src\libFLAC\bitmath.c" />
     <ClCompile Include="build\src\libFLAC\ogg_encoder_aspect.c" />
     <ClCompile Include="build\src\libFLAC\cpu.c" />
+    <ClCompile Include="build\src\share\win_utf8_io\win_utf8_io.c" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="config.h">

@@ -129,7 +129,7 @@ set(
   "build/src/share/utf8/charset.c"
   #"build/src/share/utf8/makemap.c"
   "build/src/share/utf8/utf8.c"
-  "build/src/share/utf8/charset_test.c"
+  #"build/src/share/utf8/charset_test.c"
   #"build/src/share/replaygain_synthesis/replaygain_synthesis.c"
   #"build/src/share/win_utf8_io/win_utf8_io.c"
   #"build/src/libFLAC/deduplication/lpc_compute_autocorrelation_intrin.c"
@@ -193,6 +193,11 @@ target_sources(
   Flac
   PUBLIC ${headerFiles}
   PRIVATE ${sourceFiles}
+)
+
+set_source_files_properties(
+  "build/src/libFLAC/cpu.c"
+  PROPERTIES COMPILE_FLAGS "-DNDEBUG"
 )
 
 set_target_properties(Flac PROPERTIES PREFIX "")

@@ -18,109 +18,121 @@
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx;h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
+    <Filter Include="Source\libFLAC">
+      <UniqueIdentifier>{68a91d71-7692-47d0-9b07-ce31d871e1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\share">
+      <UniqueIdentifier>{ad730ce2-d862-4f7f-9120-128ba422bc65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\share\win-utf8-io">
+      <UniqueIdentifier>{80733b97-9f1e-43b9-94cb-66e95e6295d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\share\utf8">
+      <UniqueIdentifier>{c0fb96f1-b436-4cbc-ae6a-873199d5b14c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="build\src\share\replaygain_analysis\replaygain_analysis.c">
-      <Filter>Source</Filter>
-    </ClCompile>
     <ClCompile Include="build\src\share\grabbag\alloc.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\snprintf.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\cuesheet.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\picture.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\replaygain.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\seektable.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\grabbag\file.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\utf8\iconvert.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\utf8\charset.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\utf8\utf8.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\share\utf8\charset_test.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\stream_decoder.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\crc.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\float.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\ogg_helper.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\fixed.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\format.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\bitreader.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\stream_encoder_framing.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\memory.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\metadata_iterators.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\window.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\stream_encoder.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\md5.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\ogg_decoder_aspect.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\lpc.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\metadata_object.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\fixed_intrin_ssse3.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\bitwriter.c">
-      <Filter>Source</Filter>
-    </ClCompile>
-    <ClCompile Include="build\src\libFLAC\ogg_mapping.c">
-      <Filter>Source</Filter>
+      <Filter>Source\libFLAC</Filter>
     </ClCompile>
     <ClCompile Include="build\src\libFLAC\bitmath.c">
-      <Filter>Source</Filter>
+      <Filter>Source\libFLAC</Filter>
     </ClCompile>
-    <ClCompile Include="build\src\libFLAC\ogg_encoder_aspect.c">
-      <Filter>Source</Filter>
+    <ClCompile Include="build\src\libFLAC\bitreader.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\bitwriter.c">
+      <Filter>Source\libFLAC</Filter>
     </ClCompile>
     <ClCompile Include="build\src\libFLAC\cpu.c">
-      <Filter>Source</Filter>
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\crc.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\cuesheet.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\file.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\fixed.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\fixed_intrin_ssse3.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\float.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\format.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\lpc.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\md5.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\memory.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\metadata_iterators.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\metadata_object.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\ogg_decoder_aspect.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\ogg_encoder_aspect.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\ogg_helper.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\ogg_mapping.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\picture.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\replaygain.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\replaygain_analysis\replaygain_analysis.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\seektable.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\grabbag\snprintf.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\stream_decoder.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\stream_encoder.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\stream_encoder_framing.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\libFLAC\window.c">
+      <Filter>Source\libFLAC</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\win_utf8_io\win_utf8_io.c">
+      <Filter>Source\share\win-utf8-io</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\utf8\utf8.c">
+      <Filter>Source\share\utf8</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\utf8\charset.c">
+      <Filter>Source\share\utf8</Filter>
+    </ClCompile>
+    <ClCompile Include="build\src\share\utf8\iconvert.c">
+      <Filter>Source\share\utf8</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +216,15 @@
     </ClInclude>
     <ClInclude Include="build\include\FLAC\all.h">
       <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="build\src\share\utf8\charmaps.h">
+      <Filter>Source\share\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="build\src\share\utf8\charset.h">
+      <Filter>Source\share\utf8</Filter>
+    </ClInclude>
+    <ClInclude Include="build\src\share\utf8\iconvert.h">
+      <Filter>Source\share\utf8</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
